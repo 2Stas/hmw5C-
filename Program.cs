@@ -1,4 +1,3 @@
-﻿using static hmw5.Website;
 
 namespace hmw5
 {
