@@ -5,11 +5,7 @@ namespace hmw5
     {
         static void Main(string[] args)
         {
-            Website site = new Website();
-
-            site.InputD();
-            site.DisplayD();
-
+            
             Journal journal = new Journal();
 
             journal.InputD();
@@ -23,35 +19,7 @@ namespace hmw5
         }
     }
 
-    public class Website
-    {
-        public string Name { get; set; }
-        public string Url { get; set; }
-        public string Description { get; set; }
-        public string IP { get; set; }
-
-        public void InputD()
-        {
-            Console.Write("Назва сайту: ");
-            Name = Console.ReadLine();
-            Console.Write("URL: ");
-            Url = Console.ReadLine();
-            Console.Write("Опис: ");
-            Description = Console.ReadLine();
-            Console.Write("IP-адреса: ");
-            IP = Console.ReadLine();
-        }
-
-        public void DisplayD()
-        {
-            Console.WriteLine("\n--- Інформація про сайт ---");
-            Console.WriteLine($"Назва: {Name}");
-            Console.WriteLine($"URL: {Url}");
-            Console.WriteLine($"Опис: {Description}");
-            Console.WriteLine($"IP-адреса: {IP}");
-        }
-
-        public class Journal
+           public class Journal
         {
             public string Name { get; set; }
             public int Year { get; set; }
